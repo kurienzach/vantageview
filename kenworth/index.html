@@ -1,0 +1,526 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="apple-touch-icon" href="apple-touch-icon.png">
+        <!-- Place favicon.ico in the root directory -->
+        <link href='http://fonts.googleapis.com/css?family=Maven+Pro:400,700,500' rel='stylesheet' type='text/css'>
+        
+        <!-- <link href='http://fonts.googleapis.com/css?family=Karla:400,400italic,700,700italic' rel='stylesheet' type='text/css'> -->
+     
+        <!-- <link href='http://fonts.googleapis.com/css?family=Khula:400,700,600,300,800' rel='stylesheet' type='text/css'> -->
+       
+        <!-- <link href='http://fonts.googleapis.com/css?family=Hind:400,600,500,300,700' rel='stylesheet' type='text/css'> -->
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/font-awesome/css/font-awesome.min.css">
+        <link rel="stylesheet" href="css/weather/css/weather-icons.min.css">
+        <!-- <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600' rel='stylesheet' type='text/css'> -->
+        <script src="js/vendor/modernizr-2.8.3.min.js"></script>
+        <!-- // <script src="js/vendor/live.js"></script> -->
+    </head>
+    <body>
+        <!--[if lt IE 8]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+        <!-- Add your site or application content here -->
+        <div class="container">
+            <aside class="left-bar">
+                
+                <div class="triangle"></div>
+
+                <div class="sidebar-top">
+                    <a href="index.html"><img class="img-responsive" src="img/logo-Kenworth.svg" alt="The Tree"></a>
+                    <ul class="sidebar-list">
+                        <!-- <li class="expanded"><a href="#">North Block<i class="fa fa-angle-right fa-lg"></i></a>
+                            <ul>
+                                <li><a href="#">Group A</a></li>
+                                <li><a href="#">Group B</a></li>
+                                <li><a href="#">Group C</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">South Block<i class="fa fa-caret-right fa-lg"></i></a></li> -->
+                    </ul>
+                </div>
+                <div class="sidebar-bottom">
+                    <div class="testimonials">
+                        <div class="testimonial padded-content selected">
+                            <div class="header clearfix">
+                                <img src="img/testimonials/testimonial_tuntun_sarkar.jpg" alt="" class="avatar">
+                                <div class="header-text">
+                                    <h4>Tuntun Sarkar</h4>
+                                    <p><small>Provident Welworth City</small></p>
+                                </div>
+                            </div>
+                            <div class="text">
+                                <p><small>"Our visit to the site was wonderful experience as the entire staff at Provident has been extremely helpful in accomodating our needs"</small></p>
+                            </div>
+                        </div>
+
+                        <div class="testimonial padded-content">
+                            <div class="header clearfix">
+                                <img src="img/testimonials/testimonial_rajeev_sengupta.jpg" alt="" class="avatar">
+                                <div class="header-text">
+                                    <h4>Rajeev Sengupta</h4>
+                                    <p><small>Provident Welworth City</small></p>
+                                </div>
+                            </div>
+                            <div class="text">
+                                <p><small>"I was impressed with the professional approach of the customer Relationship Management team in helping me choose this apartment-Truly a city within a city"</small></p>
+                            </div>
+                        </div>
+
+                        <div class="testimonial padded-content">
+                            <div class="header clearfix">
+                                <img src="img/testimonials/testimonial_abir_mukherjee.jpg" alt="" class="avatar">
+                                <div class="header-text">
+                                    <h4>Abir Mukherjee</h4>
+                                    <p><small>Provident Harmonys</small></p>
+                                </div>
+                            </div>
+                            <div class="text">
+                                <p><small>"Having earlier experienced the construction quality and premium lifestyle of a Puravankara home, it was easy to choose Provident Harmony as our first home"</small></p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="link-ico padded-content ">
+                        <i class="fa fa-camera fa-lg" ></i>
+                        <i class="fa fa-file fa-lg"></i>
+                        <i class="fa fa-map-marker fa-lg green"></i>
+                        <i class="fa fa-phone fa-lg green"></i>
+                    </div>
+
+                    <div class="text-small padded-content"><p><small style="font-size: 76%;">Copyright © 2015 providenthousing.com</small></p></div>
+
+                    <hr>
+
+                    <div class="padded-content">
+                        <img class="img-responsive" src="img/logo-provident.svg" alt="Provident">
+                    </div>
+                </div>
+            </aside>
+
+            <div class="loader">
+                <div class="loader-left"></div>
+                <div class="loader-div">
+                    <div class="icon">
+                        <i class="fa fa-spinner fa-pulse fa-2x"></i>
+                        <p><span>0</span>%</p>
+                    </div>
+                    <div class="userguide" style="display:none">
+                        <img src="img/user-guide.png">
+                        <p>Yes, I got it!</p>
+                        <button class="btn-default">Skip This</button>
+                    </div>
+                </div>
+            </div>
+
+            <section class="content">
+
+                <!-- *********************** Modal *********************** -->
+                <div class="modal-container scene-hide">
+                    <div class="modal">
+                        <img class="modal-close" src="img/icon-close.svg" alt="">
+                        <div class="modal-content">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ******************* Scene Area ******************* -->
+                <!-- Scene 3 -->
+                <div class="scene" id="scene3">
+                
+                    <div class="img-holder">
+
+                    </div>
+                    <label class="switch">
+                        <input type="checkbox">
+                  <div class="slider"></div>
+                        </label>
+
+                        <div class="image-2d"><img src="img/scene_data/floor_plans/2dfloor.jpg"/></div>
+                    <div class="top-bar scene-hide">
+                        <img class="close-btn" src="img/icon-close.svg" alt="">
+                    </div>
+
+                    <div class="scene-content scene-hide">
+                        <span class="text"></span>
+                        <button class="payment" style="background:#222;">Check Total Price</button>
+                        <button class="book">Book Now</button>
+                    </div>
+
+
+
+                    <div class="right scene-hide">
+                    	<div class="virtual-eye">
+                            <img class="legend" src="img/legend.png" alt="">
+                        </div>
+                        <div class="compass-holder">
+                            <img class="compass" src="img/compass-white.svg" alt="">
+                            <img class="buyback" src="img/buyback.png" alt="">
+                        </div>
+                    </div>
+
+                    <div class="left scene-hide">
+                    </div>
+                </div><!-- End of Scene 3 -->
+
+                <!-- Scene 2 -->
+                <div class="scene" id="scene2">
+                    <!-- Scene collapse controls -->
+                    <div class="collapse scene-hide">
+                        <div class="top">
+                            <img class="prev-btn" src="img/icon-back.svg" alt="">
+                        </div>
+                        <div class="floors">
+                            <div class="content"></div>
+                        </div>
+                    </div>
+                    
+                    <!-- Scene frames -->
+                    <div class="img-holder"></div>
+
+                    <!-- Scene 360 panos -->
+                    <div class="img-360 scene-hide"></div>
+
+                    <!-- Scene bottom controls -->
+                    <div class="bottom1-bar scene-hide">
+                        <div class="left scene-hide">
+                            <div class="progress-bar">
+                                <div class="completed"></div>
+                            </div>  
+                            <p>50% construction completed as on 25th September 2014</p>
+                        </div>
+                        <div class="right scene-hide">
+                            <div>
+                                <img class="compass" src="img/compass.png" alt="">
+                            </div>
+                            <div class="virtual-eye">
+                                <img class="virtual-eye" src="img/virtualeye-icon.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div><!-- End of Scene 2 -->
+
+                <!-- Scene 1 -->
+                <div class="scene" id="scene1">
+                    <!-- Scene collapse controls -->
+                    <div class="collapse scene-hide">
+                        <div class="top">
+                            <img class="prev-btn" src="img/icon-back.svg" alt="">
+                        </div>
+                    </div>
+
+                    <!-- Scene top bar controls -->
+                    <div class="top-bar scene-hide">
+                        <img class="close-btn" src="img/icon-close-white.svg" alt="">
+                    </div>
+
+                    <!-- Scene frames -->
+                    <div class="img-holder"></div>
+
+                    <!-- Scene 360 panos -->
+                    <div class="img-360 scene-hide"></div>
+
+                    <!-- Scene bottom controls -->
+                    <div class="bottom1-bar">
+                        <div class="left scene-hide">
+                            <div class="progress-bar">
+                                <div class="completed"></div>
+                            </div>  
+                            <p>50% construction completed as on 25th September 2014</p>
+                        </div>
+                        <div class="right scene-hide">
+                            <div>
+                                <img class="compass" src="img/compass.png" alt="">
+                            </div>
+                            <div class="virtual-eye">
+                                <img class="virtual-eye" src="img/virtualeye-icon.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div><!-- End of Scene 1 -->
+
+                <!-- Scene 360 -->
+                <div class="scene" id="scene360" style="display:none">
+                    <!-- Scene top bar controls -->
+                    <div class="top-bar scene-hide">
+                        <img class="close-btn" src="img/icon-close-white.svg" alt="">
+                    </div>
+
+                    <!-- Scene 360 panos -->
+                    <div class="img-360 scene-hide"></div>
+                </div><!-- End of Scene 1 -->
+
+
+            
+                <!-- Bottom Bar -->
+                <div class="bottom-bar">
+                    <div class="icons scene-hide">
+                        <div class="weather">
+                            <i class="wi"></i>
+                            <h2><strong></strong> &degC</h2>
+                            <p></p>
+                        </div>
+                    </div>
+                </div><!-- End of Bottom Bar -->
+
+                <div class="tooltip left" style="display: none">
+                    <div class="pointer"></div>
+                    <p>Swimming Pool</p>
+                </div>
+
+                <div class="instruction-info" style="display: none">
+                    <i class="fa fa-info"></i>
+                    <small>click around to explore</small>
+                    <img src="img/icon-close.svg" alt="">
+                </div>
+
+                
+
+                <!-- <div class="instruction-info info2" style="display: none">
+                    <i class="fa fa-info"></i>
+                    <small>click to explore 360 views</small>
+                    <img src="img/icon-close.svg" alt="">
+                </div> -->
+            </section>
+        </div>
+
+        <form id="frm-contact" action="/vantageview/payment" method="get" style="display=none">
+            <input type="hidden" class="ProjectID" name="ProjectID" value="2">
+            <input type="hidden" class="flat_id" name="flat_id" value="">
+            <input type="hidden" class="cust_name" name="cust_name" value="">
+            <input type="hidden" class="cust_mail" name="cust_mail" value="">
+            <input type="hidden" class="cust_mobile" name="cust_mobile" value="">
+        </form>
+
+        <!-- Modal Templates -->
+        <script type="text/template" id="video-modal">
+            <iframe width="100%" height="100%" src="https://www.youtube.com/embed/jxQm14m1_Fk" frameborder="0" allowfullscreen></iframe>
+        </script>
+
+        <script type="text/template" id="contact-modal">
+            <div class="contact-modal">
+                <img class="trees" src="img/Kenworth-slide.jpg">
+                <h2>Homes inspired by arts and sports</h2>
+                <p>Ph : 080 440 004 400<br>email: sales@providenthousing.com<br>
+                <small>designed and developed by Banded Designs Pvt Ltd, Bangalore</small></p> 
+            </div>
+        </script>
+
+        <script type="text/template" id="info-modal">
+            <div class="info-modal">
+                <div class="clearfix">
+                <h2>Site info</h2>
+                    <div class="left">
+                        <h3>Kenworth</h3>
+                        <p>By Provident<br>PVNR Expressway-Rajendranagar,<br>Hyderabad,<br></p>
+                         <!-- Contact +9180035703432</p>-->
+
+                        <a href="https://goo.gl/maps/VAQpNidhLYP2" target="none"><img src="img/google-map-icon.png" alt=""></a>
+                    </div>
+                    <div class="right">
+                        <div class="map-img" data-zoomed="img/Kenworth-locationMap.jpg">
+                            <img src="img/Kenworth-locationMap.jpg">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </script>
+
+        <script type="text/template" id="user-modal">
+            <div class="contact-form">
+                <div>
+                    <img src="img/logo-provident.svg" alt="Provident">
+                    <p>Please fill in your details to view Total Price and Payment Details</p>
+                    <input type="text" id="txtname" placeholder="name" name="name" required>
+                    <input type="email" id="txtemail" placeholder="email" name="email" required>
+                    <input type="text" id="txtmobile" placeholder="mobile" name="mobile" required>
+                    <button class="btn-default" type="button">Continue</button>
+                </div>
+            </div>
+        </script>
+
+        <script type="text/template" id="price-modal">
+            <div class="price-details table-modal">
+                <div>
+                    <h1><%=type %> Flat No : <%=flat_no %></h1>
+                    <p>Pricing is subject to change without prior notice</p>
+                    <div class="table">
+                        <div class="scroll">
+                            <div class="row"><p class="bold">TOTAL PRICE</p></div>
+                            <div class="row"><p>Base Price : <%=base_price %>psqft</p></div>
+                            <div class="row split clearfix">
+                                <p>Agreement Value</p>
+                                <p>INR <%=agreement_value %>/-</p>
+                            </div>
+                            <div class="row split clearfix">
+                                <p>Other Statuatory charges</p>
+                                <p>INR <%=other_charges %>/-</p>
+                            </div>
+                        </div>
+                        <div class="row grand split clearfix">
+                            <p class="bold">Net Amount</p>
+                            <p class="bold">INR <%=total_cost %>/-</p>
+                        </div>
+                    </div>
+                    
+                    <div class="buttons">
+                        <button class="btn-default payment">Payment Plan</button>
+                        <button class="btn-default book">Book Now</button>
+                    </div>
+                </div>
+            </div>
+        </script>
+
+        <script type="text/template" id="payment-modal">
+            <div class="payment-plan table-modal">
+                <div>
+                    <h1><%=type %> Flat No : <%=flat_no %></h1>
+                    <p>Construction link amount payable as of 31st May 2015</p>
+                    <div class="table">
+                        <div class="scroll">
+                            <div class="row"><p class="bold">PAYMENT PLAN</p></div>
+                            <div class="row split clearfix">
+                                <p>Booking Amount (on execution of agreement)</p>
+                                <p>20%</p>
+                            </div>
+                            <div class="row split clearfix">
+                                <p>Completion of Foundation works</p>
+                                <p>10%</p>
+                            </div>
+                            <div class="row split clearfix">
+                                <p>Completion of Stilt roof Slab</p>
+                                <p>5%</p>
+                            </div>
+                            <div class="row split clearfix">
+                                <p>Completion of 1st floor roof slab</p>
+                                <p>5%</p>
+                            </div>
+                            <div class="row split clearfix">
+                                <p>Completion of 2nd floor roof slab</p>
+                                <p>5%</p>
+                            </div>
+                            <div class="row split clearfix">
+                                <p>Completion of 3rd floor roof slab</p>
+                                <p>5%</p>
+                            </div>
+                            <div class="row split clearfix">
+                                <p>Completion of 4th floor roof slab</p>
+                                <p>5%</p>
+                            </div>
+                            <div class="row split clearfix">
+                                <p>Completion of 5th floor roof slab</p>
+                                <p>5%</p>
+                            </div>
+                            <div class="row split clearfix">
+                                <p>Completion of 6th floor roof slab</p>
+                                <p>5%</p>
+                            </div>
+                            <div class="row split clearfix">
+                                <p>Completion of 7th floor roof slab</p>
+                                <p>5%</p>
+                            </div>
+                            <div class="row split clearfix">
+                                <p>Completion of 8th floor roof slab</p>
+                                <p>5%</p>
+                            </div>
+                            <div class="row split clearfix">
+                                <p>Completion of 9th floor roof slab</p>
+                                <p>5%</p>
+                            </div>
+                            <div class="row split clearfix">
+                                <p>Completion of 10th floor roof slab</p>
+                                <p>5%</p>
+                            </div>
+                            <div class="row split clearfix">
+                                <p>Completion of Blockwork</p>
+                                <p>3%</p>
+                            </div>
+                            <div class="row split clearfix">
+                                <p>Completion of Internal Plastering</p>
+                                <p>3%</p>
+                            </div>
+                            <div class="row split clearfix">
+                                <p>Completion of External Plastering</p>
+                                <p>3%</p>
+                            </div>
+                            <div class="row split clearfix">
+                                <p>Completion of Flooring works</p>
+                                <p>3%</p>
+                            </div>
+                            <div class="row split clearfix">
+                                <p>Possession</p>
+                                <p>3%</p>
+                            </div>
+                        </div>
+                        <div class="row grand split clearfix">
+                            <p class="bold">Total</p>
+                            <p class="bold">100%</p>
+                        </div>
+                    </div>
+                    
+                    <div class="buttons">
+                        <button class="btn-default payment">Total Price</button>
+                        <button class="btn-default book">Book Now</button>
+                    </div>
+                </div>
+            </div>
+        </script>
+
+<script type="text/template" id="top-view-modal">
+            <div class="top-view-modal">
+                <img src="<%=map_img %>">
+            </div>
+        </script>
+
+        <!--script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.3.min.js"><\/script>')</script-->
+        <script src="js/vendor/jquery-1.11.3.min.js"></script>
+        <script src="js/vendor/underscore-min.js"></script>
+        <script src="js/vendor/jquery.transit.min.js"></script>
+        <script src="js/vendor/velocity.min.js"></script>
+        <script src="js/vendor/waitforimages.min.js"></script>
+        <script src="js/vendor/raphael-min.js"></script>
+        <script src="js/vendor/jquery.loupe.js"></script>
+
+        <script src="js/vendor/three.min.js"></script>
+        <script src="js/vendor/OrbitControls.js"></script> 
+        <script src="js/vendor/TweenLite.min.js"></script> 
+        <script src="js/photosphere.js"></script>
+
+        <!-- // <script src="js/data.js"></script> -->
+        <script src="js/config.js"></script>
+        <script src="js/data-menu.js"></script>
+        <script src="js/data-l1-l2.js"></script>
+        <script src="js/data-nb-360.js"></script>
+        <script src="js/data-nb-ta.js"></script>
+        <script src="js/data-nb-tb.js"></script>
+        <script src="js/data-nb-tc.js"></script>
+        <script src="js/data-sb-ta.js"></script>
+        <script src="js/data-sb-tb.js"></script>
+        <script src="js/data-sb-tc.js"></script>
+        <script src="js/data-flat-view.js"></script>
+
+        <script src="js/plugins.js"></script>
+        <script src="js/render.js"></script>
+        <script src="js/main.js"></script>
+
+        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+        <!--script>
+            (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+            function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+            e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+            e.src='https://www.google-analytics.com/analytics.js';
+            r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+            ga('create','UA-XXXXX-X','auto');ga('send','pageview');
+        </script-->
+    </body>
+</html>

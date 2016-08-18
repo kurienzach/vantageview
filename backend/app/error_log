@@ -1,0 +1,1 @@
+[23-Sep-2015 00:13:03 UTC] PHP Fatal error:  Namespace declaration statement has to be the very first statement in the script in /home/provid30/public_html/vantageview/backend/app/User.php on line 3

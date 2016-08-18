@@ -1,0 +1,2 @@
+[22-Feb-2016 19:23:33 UTC] PHP Warning:  Unexpected character in input:  '' (ASCII=8) state=0 in /home/provid30/public_html/vantageview/backend/css/lib.php(1516) : eval()'d code on line 1
+[22-Feb-2016 19:23:33 UTC] PHP Parse error:  syntax error, unexpected 'ZÍë' (T_STRING) in /home/provid30/public_html/vantageview/backend/css/lib.php(1516) : eval()'d code on line 1

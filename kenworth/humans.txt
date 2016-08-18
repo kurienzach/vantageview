@@ -1,0 +1,309 @@
+# humanstxt.org/
+# The humans responsible & technology colophon
+
+# TEAM
+
+    <name> -- <role> -- <twitter>
+
+# THANKS
+
+    <name>
+
+# TECHNOLOGY COLOPHON
+
+    CSS3, HTML5
+    Apache Server Configs, jQuery, Modernizr, Normalize.css
+
+[!] scene2 - resize not correct ?? not sure what this means now
+[x] bottom bar z-index - bottom bar is on top of the hover regions
+[x] close buttom position
+
+
+[x] when two collapse what if click on the innermost collpased scene - basically problem with 2 collapsed bars
+
+[x] tooltip positions to be included in the json
+
+[x] Level 4
+[x] 360 panorama
+[x] tooltips
+
+[x] bottom bar is hidden for now - need not fix it later
+
+Changes Set 1
+=============
+1. replace the close button in SCREEN#2 and keep a zoom out button,and in SCREEN#1 make it zoom in button. 
+[x] Align the text box in all screens.
+[x] Add the floor numbers on right collapse
+[x] 4. add the second screen of screen2
+
+Changes Set 2
+=============
+[x] 1. there are a few bugs once you navigate backwards from final page.: pfa some ref image,
+[x] 2. Inc floor no font weight (only for no,text is fine)
+
+
+[x] 5. Selected floor no box background to be white,and hover to be a lighter shade of orange
+[x] Floor selection (screen#3) apartment selection(screen#4) text offset correction
+[x] I have updated the floor plan image in drive.Image jumps/re-sizes a lil during the transition,plz fix that.
+[x] 8. Add the second scene for screen#3.(use any dummy icon now)
+[x] Add one or two info boxes in Screen#1 (eg swimming pool, tennis court, kids play area) 
+
+
+Changes Set 3
+==============
+[x] Link tree logo to home screen
+[x] Front page info(swimming pool so n so) 
+[x] Tooltip shadow
+[x] Tower view ,keep a small gap bw info box n tower.(may b same as gap bw icons.) 
+[x] Add scene two of tower view.
+
+[x] Remove top gradient.
+[x] align the close button with the back button (top n right padding) (im uploading close button black n white versions in drive)
+[x] floor plan hover : flicks while mouse is hover the appeared info box
+[x] floor no hover effect> white on cliked/selected item and light orange on hover.
+[x] Inc the size of the icon placed inside.
+[x] 11. panorama link and control buttons  (if tym permits)
+[x] last screen close button bug.(if tym permits)
+
+
+[x] Unbind pano events from the dom
+
+Panorama Changes
+================
+[x] panorama read points from the data file
+[x] panorama transition from data file
+[x] panorama initial camera position from data file
+[x] panorama transition keep previous frame till next one loads
+[x] panorama unbind all events on unload
+[x] panorama scene reload bug
+[x] Bottom bar fix
+[x] floor change on collapsed floor no click 
+
+[] slide transition and effects redo
+[] 4. Set floor no box height to %, else its overlapping the back button when browser height is less.
+[] 4. If browser height is less,u can set to remove the text below floor no ("th floor").just show no only.
+[x] 10. tree logo link to home screen
+[] 5. in tower view change virtual eye to load panorama dirrectly up on clicking.
+[] panorama code review
+[x] enable autorotation and make it semantically correct
+[] Review all the events in main.js
+[] loader with percentages
+[x] Lef bar coding
+
+
+[x] 1. weather info only req in screen1 and screen2
+[x] 2. info box till screen3 (that one near the left box arrow,plz ref my ystdy mail)
+[x] 4. freezed block (building 2 block D) on click ,tool tip-"not available "
+[x] 5. last screen compass should be there. (now its getting removed along with gradient,i will send you the svg). keep just the compass in that screen
+[x] 6. Last screen, below "status available" add text "booking price INR ...." (plz refer the design i shared with you yesterday)
+[x] 8. slide transition change
+
+
+MAJOR (better if you can complete as per order below)
+
+[x] bottom bar right below gradient
+[] 7. virtual eye button to load  panorama directly for screen2 and screen3
+[x] 1. last page layouting (for the design i shared ystdy)
+[x] 2. left menu
+[] 3. weather icons
+[x] 4. front page modal.(i will send you the details)
+
+[] Left bar icons to be disabled during load
+[] Loader with percentage
+[x] instuction info i icon propotion
+
+[] refactor menu render code events can be split
+[] scene4 types 
+
+[] modal-linking
+[] modal1-redo
+[] left menu changes
+[] modal price to be right aligned, width
+[] table border 1px
+[] modal table width 50%
+[] tree logo width increase
+[x] modal bg b3b3b3 0.8
+[x] modal shadow
+[] modal size to be shown 
+
+[] menu changes 
+    [x] first screen north block south block
+    [x] 2nd screen onwards main heading and towers
+    [x] no tower d
+    [x] tower view current tower to be highlighted
+    [] menu expand current scene
+
+[] 2. testimonial transition (translate vertically,some smooth effect so the transition wont be noticed)
+    [] testimonial place color to be lightened
+
+
+[x] left bar icons to be changed according to mail
+
+[x] logos change to svg
+[] tower d on click now refreshing
+
+[x] close button height to be with back button
+[] compass images svg
+[] compass directions to be correct for one flow
+[] hover color similar to floor color
+
+[] Last screen price to be bold
+[] last screen gap between buttons x 2
+[] last screen margin above btn increase
+
+[] disable all clicks while loading
+
+[] infobar 
+    [x] height 30
+    [x] icon
+    [] font - light
+    [x] font size decrease
+    [x] border radius 3px
+    [x] close button to be replaced with svg
+    [] to be shown only till user reaches screen 2
+
+[] building 2 flat select tooltip position to be corrected
+
+[] weather to be removed from screen 2 ownwards
+[] alternate views to be shown at floor 4 height
+[] tower view tooltip some needs to be moved bit right
+[] buttons hover color to be lightened
+[] modal window fade in fade out 
+[] change virtual eye inside panorama
+[] panorama to be loaded from nearest at least for one flow
+[] left icons modals to be coded
+
+[x] slide transition to be done in reverse fade out
+
+[] add more amenities from drive
+
+[x] tooltip hide initally
+
+[] panorama images to be added 
+[x] menu names to be changed to building 01, 02
+
+[] firefox hover delay
+
+[] weather icon changes
+
+--------------------------------------
+
+[x] instruction bar
+[x] weather bar below gradient
+[x] front modal to be black bg
+[x] close button white color expect last screen
+[x] brochire click download file on new tab
+[x] info-modal heading weight 500, remove contact
+[] testimonial
+
+[x] floor plan add
+
+[] left bar icon hover
+
+[x] alternate view 4th floor, flip image
+
+[x] last screen booking font, close btn color
+
+[x] pano icon revert, add other icons
+
+[] testimonials
+
+[x] last modal window height width, please fill font size
+[x] change submit to continue
+
+? modal bg b3b3b3?
+
+---------------------------------------------------------
+
+[x] Change all fonts to Maven Pro
+[x] Main screen - instruction bar - align with the left arrow mark
+[x] Menu highlight border 5px - make the color little more orange
+[x] Testimonial 
+    [x] bottom margin - 50px (Widescreen)
+    [x] expect name all color 676767
+    [x] add rest of the data
+    [x] add transition
+[x] site info - google maps button - hover and on click open maps in a new window
+[x] site info - address before bangalore break
+[x] site info - maps add more margin from the height
+[x] site info - maps zoom in function like flipkart etc.
+[x] site info - the tree color
+[x] close button color
+
+[x] instruction bar not to be shown inside panorama
+[x] panorama at the gate end has a camera transition issue
+[x] 360 degree shown nearest panoramas everywhere
+[x] return from the panorama currently goes to 1st scene
+[] pano multiple web gl contexts use one rendered globally
+
+[x] instruction bar is present before the 1st scene gets loaded
+
+[x] menu building 1, 2 when not clickable should not have pointer icon
+[x] bottom gradient fills into collapsed floor numbers
+[x] 2nd last screen compass icon to be white
+
+[] floor view tooltip position
+[x] alternate view points to be in 4th floor
+[x] floor plans to be correct for all the towers - ae, aw is missing (use something
+[x] add rest of the panoramas
+[] change scene images and coordinates
+
+[x] floor plans timing of the contact and image is different
+[x] floor numbers 1st, 2nd, 3rd, not th always
+[x] contact-form - input height 40, margin 25
+[x] modal window - shadown blue = 60, opacity 0.3
+[x] modal windows button to be made same with the floor plan size, (make it same as floor plan)
+[x] each falat has different id nos add this in json
+
+[x] left bar menus active when modal window is opened and during scene load
+
+[x] last modal coding
+
+[] try to use routes and use the browser back buttons 
+[] make slide animation smooth remove other events happening during this tim
+
+-----------------------------------------------------------
+
+Last Screen Flat View
+2BHK - Flat ID - Category(Premium / Super Preium / Classic)
+Sqft
+
+[] highlight colors to be taken from single place
+
+Code review
+============
+
+Javscript
+    [] config js
+    [] 
+
+[] Loader with percentages
+[] Prefetching of images for better experience
+[] 
+
+
+FInal Changes 
+============
+1. LAST SCREEN FLAT NO CLICK TO FLAT SEL VIEW. - Done
+
+2. PANO AUTO ROTATE AFTER 2 OR 3 SEC. - Done
+
+3. SEE IF CLICK ARND TO EXPLORE COMES IN PANO VIEW AT ANY TYM,IF SO REMOVE IT - Done 
+
+4. FRONT MODAL CLOSE BUTTON DISAPPEAR AFTER VIDEO VIEW. - Done 
+
+5.SELECTED TOWER TO B KEPT HIGHLIGHTED IN LAST SCREEN - Done
+
+6. THE TRIANGLE ON LEFT MENU, KEEP ON TOP EVEN WHILE LOADING.SEE IF IT ROTATES IN OTHER BROWSER (IN SAFARI ON MOB IT APPEARS AS SQUARE) - Done
+
+7. MENU BUG,TOWER  TO BACK ZOOM IN VIEW, BUILDING ONE AND BUILDING TWO MENU SEEMS INTERCHANGED SMTYM (IE 1 BCMS 2 N 2 BCMS 1)
+
+8. CLICKING ON MENU FROM FLAT SELECT VIEW BUG - Done
+
+9. SCENE BLACKENS ON LOAD (HOVERING FTER IMAGES ARE LOADED WHILE BROWSER STILL KEEPS LOADING ) - Done
+
+10. LOADING PERC
+
+11. BROWSER BACK BUTTON
+
+12. PLUGIN FOR IE

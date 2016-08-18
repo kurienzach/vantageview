@@ -1,0 +1,16 @@
+Files ../../vantageview/backend/.env and ./.env differ
+Only in ../../vantageview/backend: Remodal-1.0.2
+Files ../../vantageview/backend/app/Http/Controllers/JSONController.php and ./app/Http/Controllers/JSONController.php differ
+Files ../../vantageview/backend/app/Http/Controllers/PaymentController.php and ./app/Http/Controllers/PaymentController.php differ
+Files ../../vantageview/backend/app/Http/error_log and ./app/Http/error_log differ
+Files ../../vantageview/backend/app/Http/routes.php and ./app/Http/routes.php differ
+Only in ../../vantageview/backend: backend.zip
+Only in .: diff
+Only in ../../vantageview/backend: error_log
+Only in ./img: logo-Kenworth.svg
+Only in ./img: logo-thetree.png
+Only in ../../vantageview/backend/img: project-logo.png
+Files ../../vantageview/backend/resources/views/header.blade.php and ./resources/views/header.blade.php differ
+Only in ../../vantageview/backend/resources/views/payment: .base.blade.php.swp
+Only in ../../vantageview/backend/resources/views/payment: .payment.blade.php.swp
+Files ../../vantageview/backend/resources/views/payment/header.blade.php and ./resources/views/payment/header.blade.php differ
